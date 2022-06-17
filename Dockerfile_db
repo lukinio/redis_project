@@ -1,0 +1,5 @@
+FROM redis:7.0.0
+WORKDIR /redis-db
+COPY redis-db/redis.conf /usr/local/etc/redis/redis.conf
+COPY redis-db/init.sh ./
+RUN chmod +x init.sh

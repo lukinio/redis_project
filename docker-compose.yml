@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: "app"
+    build:
+      context: .
+      dockerfile: Dockerfile_app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080 --use-colors --reload --log-level debug
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+    environment:
+      - REDIS_OM_URL=redis://redis-db:6379
+    depends_on:
+      - redis-db
+
+  redis-db:
+    container_name: "redis-db"
+    image: redis:7.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile_db
+    privileged: true
+    volumes:
+      - ./redis-db:/data:rw
+      - ./redis-db:/etc/redis
+    ports:
+      - "6379:6379"
+    command: sh -c "./init.sh"
