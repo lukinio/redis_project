@@ -1,0 +1,50 @@
+[
+    {
+        "pk": "01G5WHFS2KVEAPMPFT46BAPAT3",
+        "my_bet": 1,
+        "home": "Liverpool",
+        "away": "Arsenal",
+        "odd": 1.8,
+        "home_goal": "2",
+        "away_goal": "1"
+    },
+    {
+        "pk": "01G5WHZ234041GPQVY3B6CHZDD",
+        "my_bet": 0,
+        "home": "Leicester City",
+        "away": "Manchester United",
+        "odd": 2.5,
+        "home_goal": "2",
+        "away_goal": "2"
+    },
+    {
+        "pk": "01G5WHZ22ZZFT0JZ3QNV5N95B6",
+        "my_bet": 2,
+        "home": "Chelsea",
+        "away": "Manchester City",
+        "odd": 1.7,
+        "home_goal": "2",
+        "away_goal": "1"
+    },
+    {
+        "pk": "01G5WHZ23AWNN76TNYZXSM27ZH",
+        "my_bet": 1,
+        "home": "Everton",
+        "away": "Crystal Palace",
+        "odd": 2.8
+    },
+    {
+        "pk": "01G5WHZ23KCNYH81M4ERSA42HZ",
+        "my_bet": 2,
+        "home": "Aston Villa",
+        "away": "Brighton",
+        "odd": 2.3
+    },
+    {
+        "pk": "01G5WHZ23ERHRWB4VYYBGJE89F",
+        "my_bet": 0,
+        "home": "West Ham United",
+        "away": "Leeds United",
+        "odd": 2.2
+    }
+]
